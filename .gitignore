@@ -32,10 +32,6 @@ build/
 # Optional: MongoDB dump folders
 dump/
 
-# Optional: Uploaded files or user-generated media
-uploads/
-assets/
-
 # Coverage and test output
 coverage/
 *.lcov
