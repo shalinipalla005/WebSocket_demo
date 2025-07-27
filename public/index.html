@@ -172,7 +172,11 @@
 
     <script>
         // Global variables
-        let socket = io();
+        let socket = io("https://web-socket-demo-mu.vercel.app/", {
+            withCredentials: true,
+            transports: ['websocket'],
+        });
+
         let currentUser = null;
         let currentChatUser = null;
         let friends = [];
