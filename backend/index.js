@@ -32,6 +32,14 @@ app.use(helmet({
   }
 }));
 
+const allowedOrigin = process.env.CLIENT_URL || "https://web-socket-frontend-rust.vercel.app";
+
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true
+}));
+
+
 app.use(express.json({ limit: '10mb' }));
 app.use(express.static(path.join(__dirname, '../frontend')));
 
