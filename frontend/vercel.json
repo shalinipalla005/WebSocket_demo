@@ -1,18 +1,11 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
+    { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
     {
-      "src": "./style.css",
-      "headers": {
-        "Cache-Control": "max-age=31536000"
-      },
+      "src": "/style.css",
       "dest": "/style.css"
     },
     {
