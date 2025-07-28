@@ -9,6 +9,13 @@
   ],
   "routes": [
     {
+      "src": "/style.css",
+      "headers": {
+        "Cache-Control": "max-age=31536000"
+      },
+      "dest": "/style.css"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
