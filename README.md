@@ -257,7 +257,7 @@ DEBUG=socket.io* node server.js
 
 ## Author
 
-Shalini Palla - itspallashalini@example.com
+Shalini Palla - itspallashalini@gmail.com
 
 ## Acknowledgments
 
