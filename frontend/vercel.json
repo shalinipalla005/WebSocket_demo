@@ -9,7 +9,7 @@
   ],
   "routes": [
     {
-      "src": "/style.css",
+      "src": "./style.css",
       "headers": {
         "Cache-Control": "max-age=31536000"
       },
