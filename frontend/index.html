@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat Application</title>
     <link rel="stylesheet" href="/style.css">
-    window.API_BASE = "https://websocket-demo-ohc0.onrender.com"
 </head>
 <body>
     <div id="toast" style="
@@ -173,6 +172,7 @@
 
     <script>
         // Global variables
+        window.API_BASE = "https://websocket-demo-ohc0.onrender.com"
         const API_BASE = window.API_BASE;
         const apiUrl = `${API_BASE}/api`;
         const socket = io(API_BASE); // Socket.IO server
