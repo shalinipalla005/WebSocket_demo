@@ -1,6 +1,9 @@
-# WhatsApp Clone
+# Chat Application
 
 A real-time chat application built with Node.js, Express, Socket.io, and MongoDB. Features include user authentication, friend system, real-time messaging, typing indicators, and online status tracking.
+
+Check out the live demo here: [Chat Application Demo](https://web-socket-frontend-rust.vercel.app/)
+
 
 ## Features
 
