@@ -32,10 +32,14 @@ app.use(helmet({
   }
 }));
 
-const allowedOrigin = process.env.CLIENT_URL || "https://web-socket-frontend-rust.vercel.app";
-
 app.use(cors({
-  origin: allowedOrigin,
+  origin: function (origin, callback) {
+    if (!origin || origin.startsWith("https://web-socket-frontend-rust.vercel.app")) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS: " + origin));
+    }
+  },
   credentials: true
 }));
 
